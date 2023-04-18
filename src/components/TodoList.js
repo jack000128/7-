@@ -53,6 +53,8 @@ const TodoList = () => {
     );
   };
 
+
+
   // 컴포넌트를 렌더링합니다.
   return (
     <div className={styles.container}>
@@ -103,6 +105,8 @@ const TodoList = () => {
           <TodoItem
             key={todo.id}
             todo={todo}
+            todos={todos}
+            setTodos={setTodos}
             onToggle={() => toggleTodo(todo.id)}
             onDelete={() => deleteTodo(todo.id)}
           />
